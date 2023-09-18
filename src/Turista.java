@@ -7,9 +7,13 @@ public class Turista {
     // Construtor padrão
     Turista(){}
 
-    // Construtor personalizado
+    // Sobrecarga do Construtor personalizado
     Turista(String _nome){
         this.nome =  _nome;
+    }
+    Turista(String _nome, String _cpf) {
+        this.nome = _nome;
+        this.cpf = _cpf;
     }
 
     //Métodos
