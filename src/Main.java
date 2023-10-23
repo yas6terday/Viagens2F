@@ -8,7 +8,7 @@ public class Main {
         Turista mochileira = new Turista();
 
         // Definir forma de cada turismo
-        mochileiro.setCpf(Validacao.cpf("123"));
+        mochileiro.setCpf(Validacao.cpf());
         mochileira.setNome("Namor");
         mochileira.setCpf("456");
 
@@ -31,6 +31,12 @@ public class Main {
         // Adicionar cpf no objeto pessoaTurista
         pessoaTurista.setCpf(cpf);
         System.out.println(pessoaTurista.getCpf());
-    }
 
+        if (Validacao.cpf(cpf)) {
+            pessoaTurista.setCpf(cpf);
+
+        } else {
+            System.out.println("CPF inválido!");
+        }
+    }
 }
